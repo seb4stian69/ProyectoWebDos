@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../Style/PanelManager/panelmanager.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap">
+
+  <!-- Agrega los enlaces a Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Chano Clotheshop | Manager service</title>
+</head>
+
+<body>
+
+  <p id="leftMenu_Feedback"><a class="menuItem" href="#">Feedback</a></p>
+  <p id="leftMenu_Policy"><a class="menuItem" href="#">Policy</a></p>
+  <p id="leftMenu_Discover"><a class="menuItem" href="#">Discover</a></p>
+  <p id="leftMenu_contacts"><a class="menuItem" href="#">contacts</a></p>
+
+  <!-- Agrega el elemento select con opciones -->
+  <select id="seleccionMes" onchange="actualizarGrafico()">
+    <option value="enero">Enero</option>
+    <option value="febrero">Febrero</option>
+    <option value="marzo">Marzo</option>
+    <option value="abril">Abril</option>
+    <option value="mayo">Mayo</option>
+  </select>
+
+  <canvas id="miGrafico" width="400" height="400"></canvas>
+
+</body>
+
+<script src="../../Js/PanelManager/manager.js"></script>
+
+</html>

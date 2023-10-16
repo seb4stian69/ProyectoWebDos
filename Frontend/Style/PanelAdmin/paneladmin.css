@@ -1,0 +1,115 @@
+input{
+    font-family: 'Inter';
+}
+table{
+    font-family: 'Inter';
+    border: 1px solid black;
+}
+
+body{
+    background: url(../../Resources/PanelClient/generalLeftBar.png) no-repeat;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+.menuItem:hover{
+    color: #5a5e66;
+}
+
+#leftMenu_Feedback{
+
+    position: absolute;
+    width: 76px;
+    height: 8px;
+    left: 18px;
+    top: 851px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+
+#leftMenu_Policy{
+
+    position: absolute;
+    width: 53px;
+    height: 16px;
+    left: 33px;
+    top: 775px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+
+#leftMenu_Discover{
+
+    position: absolute;
+    width: 73px;
+    height: 16px;
+    left: 23px;
+    top: 701px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+
+#leftMenu_contacts{
+
+    position: absolute;
+    width: 73px;
+    height: 16px;
+    left: 23px;
+    top: 622px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+
+.dataTable{
+    margin: 5% 20%;
+}
+
+.dataTable table{
+    margin-top: 5%;
+}

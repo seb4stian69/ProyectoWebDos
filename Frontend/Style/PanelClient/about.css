@@ -1,0 +1,292 @@
+body{
+    background: url(../../Resources/PanelClient/generalLeftBar.png) no-repeat;
+}
+
+#menu_Home{
+    position: absolute;
+    width: 58px;
+    height: 26px;
+    left: 453px;
+    top: 45px;
+
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #333333;
+}
+#menu_About{
+    position: absolute;
+    width: 57px;
+    height: 26px;
+    left: 551px;
+    top: 45px;
+
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #333333;
+}
+#menu_Collections{
+    position: absolute;
+    width: 106px;
+    height: 26px;
+    left: 648px;
+    top: 45px;
+
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #333333;
+}
+#menu_Category{
+    position: absolute;
+    width: 89px;
+    height: 26px;
+    left: 794px;
+    top: 45px;
+
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #333333;
+
+}
+
+#leftMenu_Feedback{
+
+    position: absolute;
+    width: 76px;
+    height: 8px;
+    left: 18px;
+    top: 851px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+#leftMenu_Policy{
+
+    position: absolute;
+    width: 53px;
+    height: 16px;
+    left: 33px;
+    top: 775px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+#leftMenu_Discover{
+
+    position: absolute;
+    width: 73px;
+    height: 16px;
+    left: 23px;
+    top: 701px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+#leftMenu_contacts{
+
+    position: absolute;
+    width: 73px;
+    height: 16px;
+    left: 23px;
+    top: 622px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #1E2C4F;
+
+    transform: rotate(-90deg);
+    
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+#mission{
+    position: absolute;
+    width: 441px;
+    height: 52px;
+    left: 510px;
+    top: 220px;
+
+    background: #5BBEAC;
+    border-radius: 10px;
+}
+
+#missionTitle{
+    position: absolute;
+    width: 120px;
+    height: 39px;
+    left: 670px;
+    top: 197px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    color: #FFFFFF;
+}
+
+#missionText{
+    position: absolute;
+    width: 543px;
+    height: 468px;
+    left: 459px;
+    top: 303px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #333333;
+}
+
+#vision{
+    position: absolute;
+    width: 441px;
+    height: 52px;
+    left: 1151px;
+    top: 220px;
+    
+    background: #5BBEAC;
+    border-radius: 10px;
+}
+
+#visionTitle{
+    position: absolute;
+    width: 97px;
+    height: 39px;
+    left: 1323px;
+    top: 197px; 
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    color: #FFFFFF;
+}
+
+#visionText{
+    position: absolute;
+    width: 543px;
+    height: 546px;
+    left: 1100px;
+    top: 303px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    
+    color: #333333;
+}
+
+#carDiv{
+
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 1820px;
+    top: 35px;
+
+    background: url(../../Resources/PanelClient/iconCart.png) center center no-repeat, #5BBEAC;
+    border-radius: 8px;
+
+}
+
+#carDiv:hover{
+    cursor: pointer;
+}
+
+#carDivElipse{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 1860px;
+    top: 15px;
+
+    background: #55A093;
+    border-radius: 50%;
+}
+
+#carDivElipse p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 9px;
+    color: white;
+}
+
+.menuItem:hover{
+    color: #5a5e66;
+}
+

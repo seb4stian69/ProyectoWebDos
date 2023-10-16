@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+body{
+    background: url(../../Resources/General/loginregisterbackground.png);
+    background-size: cover;
+}
+
+#registerPanel{
+    width: 804px;
+    height: 610px;
+    background-color: rgb(255, 255, 255);
+    margin: 7% 29%;
+    border-radius: 15px;
+    padding-top: 4em;
+}
+
+#registerPanel p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #5BBEAC;
+    margin-left: 80px;
+}
+
+.inputC{
+    margin-top: 3.2em;
+    font-size: 18px;
+    border: none;
+    margin-left: 4.5em;
+}
+
+#registerInputs{
+    margin-left: 6%;
+}
+
+#btnRegistered{
+    width: 180px;
+    height: 52px;
+    margin-top: 7%;
+    margin-left: 35%;;
+    margin-right: 35%;;
+    border-radius: 8px;
+    border: none;
+    background-color: #5BBEAC;
+    color: white;
+    margin-bottom: 5em;
+}
+
+.green{
+    color: #5BBEAC;
+}
+
+#registered{
+    margin: 0 35%;
+}
+
+/* Estilo para quitar el foco de todos los input */
+input:focus {
+    outline: none; /* Quita el contorno alrededor del input */
+    box-shadow: none; /* Quita cualquier sombra en el input */
+    /* Puedes agregar otros estilos o propiedades según tus necesidades */
+}
+  
+/* Cambia el color del placeholder de los input de tipo texto */
+input[type="text"]::placeholder {
+    color: #000000; /* Cambia el color que desees */
+}
+input[type="password"]::placeholder {
+    color: #000000; /* Cambia el color que desees */
+}
+
+.green:hover{
+    color: #3d8b7d;
+    cursor: pointer;
+}
+
+#btnRegistered:hover{
+    cursor: pointer;
+    background-color: #3d8b7d;
+}

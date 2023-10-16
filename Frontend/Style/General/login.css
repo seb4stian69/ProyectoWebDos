@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+body{
+    background: url(../../Resources/General/loginregisterbackground.png);
+    background-size: cover;
+}
+
+.green{
+    color: #5BBEAC;
+}
+.green:hover{
+    color: #3d8b7d;
+    cursor: pointer;
+}
+
+#loginPanel{
+    width: 804px;
+    height: 610px;
+    background-color: rgb(255, 255, 255);
+    margin: 7% 29%;
+    border-radius: 15px;
+    padding-top: 4em;
+}
+
+#loginPanel p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #5BBEAC;
+    margin-left: 80px;
+}
+
+.inputC{
+    font-size: 18px;
+    border: none;
+    margin-left: 4.5em;
+    padding-left: 3.5em;
+}
+
+#inputCE{
+    margin-top: 3.5em;
+    background: url(../../Resources/General/Email.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#inputCP{
+    margin-top: 3em;
+    background: url(../../Resources/General/Password.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 3em;
+}
+
+/* Estilo del interruptor */
+.switch {
+    display: inline-block;
+    margin-left: 5em;
+    position: relative;
+    display: inline-block;
+    width: 35.7px; /* Ancho reducido en un 15% */
+    height: 20.4px; /* Altura reducida en un 15% */
+}
+
+/* Estilo del botón deslizante */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20.4px; /* Ajustado para que coincida con el nuevo tamaño */
+}
+
+/* Estilo del botón deslizante cuando está activado */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17.4px; /* Ajustado para que coincida con el nuevo tamaño */
+    width: 17.4px; /* Ajustado para que coincida con el nuevo tamaño */
+    left: 1.7px; /* Ajustado para que coincida con el nuevo tamaño */
+    bottom: 1.7px; /* Ajustado para que coincida con el nuevo tamaño */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Cambia el color de fondo del interruptor cuando está activado */
+input:checked + .slider {
+    background-color: #5BBEAC;
+}
+
+/* Mueve el botón deslizante a la posición de encendido cuando está activado */
+input:checked + .slider:before {
+    -webkit-transform: translateX(17.4px); /* Ajustado para que coincida con el nuevo tamaño */
+    -ms-transform: translateX(17.4px); /* Ajustado para que coincida con el nuevo tamaño */
+    transform: translateX(17.4px); /* Ajustado para que coincida con el nuevo tamaño */
+}
+
+.flexOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexText {
+    flex-grow: 1;
+    margin-left: 10px; /* Espacio entre el interruptor y el texto */
+}
+
+#toggleText{
+    display: inline-block;
+    font-size: 18px !important;
+    margin-left: 1em !important;
+}
+
+#forgotText{
+    color: #989898;
+    margin-left: 8em;
+}
+
+#btnLogin{
+    width: 155px;
+    height: 52px;
+    margin-left: 5.8em;
+    margin-top: 3em;
+    border-radius: 8px;
+    border: none;
+    background-color: #5BBEAC;
+    color: white;
+    margin-bottom: 8em;
+}
+
+#btnLogin:hover{
+    cursor: pointer;
+    background-color: #3d8b7d;
+}
+
+#notRegistered{
+    margin: 25% 35%;
+}
+
+/* Estilo para quitar el foco de todos los input */
+input:focus {
+    outline: none; /* Quita el contorno alrededor del input */
+    box-shadow: none; /* Quita cualquier sombra en el input */
+    /* Puedes agregar otros estilos o propiedades según tus necesidades */
+}
+  
+/* Cambia el color del placeholder de los input de tipo texto */
+input[type="text"]::placeholder {
+    color: #000000; /* Cambia el color que desees */
+}
+input[type="password"]::placeholder {
+    color: #000000; /* Cambia el color que desees */
+}

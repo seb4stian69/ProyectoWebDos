@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+#menu_Category{
+    width: 120px;
+    margin-top: 1em;
+}
+
+.menuItem {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+.menuItemDropdown:hover .submenu {
+    display: block;
+    z-index: 1;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 5px 0;
+}

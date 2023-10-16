@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../Style/PanelClient/cart.css">
+    <link rel="stylesheet" href="../../Style/PanelClient/general.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap">
+
+    <title>Chano Clotheshop | Collections</title>
+
+</head>
+
+<body>
+
+    <div class="menu" style="background-color:rgba(255, 255, 255, 0)" >
+        <p id="menu_Home"><a class="menuItem" href="#">Home</a></p>
+        <p id="menu_About"><a class="menuItem" href="#">About</a></p>
+        <p id="menu_Collections"><a class="menuItem" href="#">Collections</a></p>
+        <div id="menu_Category" class="menuItemDropdown">
+            <a class="menuItem" href="#">Category</a>
+            <div class="submenu">
+                <a href="#">Spring</a>
+                <a href="#">Summer</a>
+                <a href="#">Autumn</a>
+                <a href="#">Winter</a>
+            </div>
+        </div>
+    </div>
+
+    <p id="leftMenu_Feedback"><a class="menuItem" href="#">Feedback</a></p>
+    <p id="leftMenu_Policy"><a class="menuItem" href="#">Policy</a></p>
+    <p id="leftMenu_Discover"><a class="menuItem" href="#">Discover</a></p>
+    <p id="leftMenu_contacts"><a class="menuItem" href="#">contacts</a></p>
+
+    <div id="allClothes">
+
+        <!-- other -->
+        <div id="clotheCard">
+            <img id="camisaVector" src="../../Resources/PanelClient/camisavector.png" alt="">
+            <div class="circle bottom-left" onclick="eliminarDiv(this)"></div>
+            <div class="circle top-right">
+                <p>2</p>
+            </div>
+        </div>
+
+        <!-- other -->
+        <div id="clotheCard">
+            <img id="camisaVector" src="../../Resources/PanelClient/camisavector.png" alt="">
+            <div class="circle bottom-left" onclick="eliminarDiv(this)"></div>
+            <div class="circle top-right">
+                <p>2</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="carDiv"></div>
+
+</body>
+
+<script src="../../Js/PanelClient/general.js"></script>
+
+<script src="../../Js/PanelClient/cart.js"></script>
+
+</html>
