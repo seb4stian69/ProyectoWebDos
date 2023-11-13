@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `ChanoClothes`.`Usuarios` (
 -- Table `ChanoClothes`.`Roles`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ChanoClothes`.`Roles` (
-  `_id` VARCHAR(100) NULL,
+  `_id` VARCHAR(100) NOT NULL,
   `tipo` ENUM('cliente', 'admin', 'gerente', 'serviciocliente') NOT NULL,
   `Usuarios__id` VARCHAR(15) CHARACTER SET 'big5' NOT NULL,
   PRIMARY KEY (`_id`),
