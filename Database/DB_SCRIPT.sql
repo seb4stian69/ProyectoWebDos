@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `ChanoClothes`.`DetallesFactura` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ChanoClothes`.`Credenciales` (
   `_id` VARCHAR(100) NOT NULL,
-  `usuario` VARCHAR(45) NOT NULL,
+  `usuario` VARCHAR(45) NOT NULL UNIQUE,
   `contrasena` VARCHAR(45) NOT NULL,
   `Usuarios__id` VARCHAR(15) CHARACTER SET 'big5' NOT NULL,
   PRIMARY KEY (`_id`),
