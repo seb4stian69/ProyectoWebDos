@@ -287,4 +287,31 @@ a{
     margin: 10% 20%;
     margin-bottom: 0;
 
-  }
+}
+
+.botonCompra{
+
+    position: absolute;
+    width: 301px;
+    height: 64px;
+    left: 1539px;
+    top: 860px;
+
+    background-color: #5BBEAC;
+    border-radius: 5px;
+
+}
+.botonCompra:hover{
+    cursor: pointer;
+    background-color: #43887b;
+}
+
+.PRealizarCompra{
+    font-family: 'Inter';
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
