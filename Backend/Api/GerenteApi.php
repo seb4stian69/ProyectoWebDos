@@ -1,6 +1,6 @@
 <?php
 
-include_once '../Controller/LoginController.php';
+include_once '../Controller/GerenteController.php';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -16,19 +16,25 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 if($method == "OPTIONS"){die();}
 
-$controller = new Sesion();
+$controller = new Gerente();
 $okStatus = "HTTP/1.1 200 OK";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $json_data = file_get_contents("php://input");
     $data = json_decode($json_data);
-    
-    $usuario = $data->user;
-    $contrasena = $data->password;
+
+    $consulta = $data->consulta;
+    $mes = $data->mes;
+    $anio = $data->anio;
 
     header('Content-Type: application/json');
-    echo json_encode($controller->login($usuario, $contrasena));
+    
+    if($consulta == "total"){
+        echo json_encode($controller->obtenerGananciasPorAnioMes($mes, $anio));
+    }else{
+        echo json_encode($controller->obtenerProductosVendidosPorMes($mes, $anio));
+    }
 
 }
 

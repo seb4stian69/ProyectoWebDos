@@ -2,7 +2,7 @@
 
 include_once '../Common/Database.controller.php';
 
-class Sesion extends Database{
+class Sesion extends Database{  
 
     public function login($usuario, $contrasena){
         return $this->select(

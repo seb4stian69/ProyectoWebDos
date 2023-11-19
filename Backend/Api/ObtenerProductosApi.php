@@ -1,6 +1,6 @@
 <?php
 
-include_once '../Controller/LoginController.php';
+include_once '../Controller/ObtenerProductosController.php'; 
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -16,19 +16,13 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 if($method == "OPTIONS"){die();}
 
-$controller = new Sesion();
+$controller = new ObtenerProductos();
 $okStatus = "HTTP/1.1 200 OK";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
-    $json_data = file_get_contents("php://input");
-    $data = json_decode($json_data);
-    
-    $usuario = $data->user;
-    $contrasena = $data->password;
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     header('Content-Type: application/json');
-    echo json_encode($controller->login($usuario, $contrasena));
+    echo json_encode($controller->get());
 
 }
 

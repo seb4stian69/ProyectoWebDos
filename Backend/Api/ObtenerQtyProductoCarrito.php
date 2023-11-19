@@ -1,6 +1,6 @@
 <?php
 
-include_once '../Controller/LoginController.php';
+include_once '../Controller/ObtenerQtyProductoCarrito.php';
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -16,7 +16,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 if($method == "OPTIONS"){die();}
 
-$controller = new Sesion();
+$controller = new ObtenerQtyProductoCarrito();
 $okStatus = "HTTP/1.1 200 OK";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -24,11 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $json_data = file_get_contents("php://input");
     $data = json_decode($json_data);
     
-    $usuario = $data->user;
-    $contrasena = $data->password;
+    $id = $data->id;
 
     header('Content-Type: application/json');
-    echo json_encode($controller->login($usuario, $contrasena));
+    echo json_encode($controller->obtener($id));
 
 }
 
