@@ -230,6 +230,10 @@ a{
     margin: 10% 25%;
 }
 
+#camisaVector:hover{
+    cursor: pointer;
+}
+
 .circle {
     position: absolute;
     width: 25px;

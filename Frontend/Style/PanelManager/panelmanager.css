@@ -101,3 +101,49 @@ a{
 #miGrafico{
     margin: 5% 31%;
 }
+
+#seleccionMes{
+    /* Rectangle 58 */
+
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 1623px;
+    top: 62px;
+
+    background: #5BBEAC;
+    border-radius: 19px;
+
+    border: none;
+
+    text-align: center;
+    color: white;
+
+}
+
+#seleccionMes option {
+    background: white;
+    color: #5BBEAC;
+}
+
+#totalVendido{
+
+    /* Total vendido mes: 213213$ */
+
+    position: absolute;
+    width: auto;
+    height: 29px;
+    left: 800px;
+    top: 877px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #1E2C4F;
+
+
+}

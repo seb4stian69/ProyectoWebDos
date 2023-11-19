@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap">
     <link rel="stylesheet" href="../../Style/General/register.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Chano Clotheshop | Register</title>
 
 </head>
@@ -20,21 +22,21 @@
         <p>Register</p>
 
         <div id="registerInputs">
-            <input id="inputCE" class="inputC" placeholder="Name" type="text">
-            <input id="inputCP" class="inputC" placeholder="Lastname" type="text">
+            <input id="IDName" class="inputC inputCE" placeholder="Name" type="text">
+            <input id="IDLastname" class="inputC inputCP" placeholder="Lastname" type="text">
             <br>
-            <input id="inputCE" class="inputC" placeholder="Username" type="text">
-            <input id="inputCP" class="inputC" placeholder="Email" type="text">
+            <input id="IDUsername" class="inputC inputCE" placeholder="Username" type="text">
+            <input id="IDEmail" class="inputC inputCP" placeholder="Email" type="text">
             <br>
-            <input id="inputCE" class="inputC" placeholder="Cellphone" type="text">
-            <input id="inputCP" class="inputC" placeholder="Address" type="text">
+            <input id="IDCellphone" class="inputC inputCE" placeholder="Cellphone" type="text">
+            <input id="IDAddress" class="inputC inputCP" placeholder="Address" type="text">
             <br>
-            <input id="inputCE" class="inputC" placeholder="Password" type="password">
-            <input id="inputCP" class="inputC" placeholder="Repeat your password" type="password">
+            <input id="IDPassword" class="inputC inputCE" placeholder="Password" type="password">
+            <input id="IDRepeat" class="inputC inputCP" placeholder="Repeat your password" type="password">
             <br>
         </div>
 
-        <button id="btnRegistered">Register</button>
+        <button onclick="realizarRegistro()" id="btnRegistered">Register</button>
         <br>
         <span id="registered">Already registered? <span id="loginlck" class="green">Login</span> </span>
 

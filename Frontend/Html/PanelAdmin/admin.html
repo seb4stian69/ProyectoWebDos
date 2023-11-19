@@ -9,71 +9,47 @@
   <link rel="stylesheet" href="../../Style/PanelAdmin/paneladmin.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <title>Chano Clotheshop | Admin service</title>
-
+  
 </head>
 
 <body>
-
+  
   <p id="leftMenu_Feedback"><a class="menuItem" href="#">Feedback</a></p>
   <p id="leftMenu_Policy"><a class="menuItem" href="#">Policy</a></p>
   <p id="leftMenu_Discover"><a class="menuItem" href="#">Discover</a></p>
-  <p id="leftMenu_contacts"><a class="menuItem" href="#">contacts</a></p>
+  <p id="leftMenu_contacts"><a class="menuItem" href="../General/login.html">logout</a></p>
+  
+  <div id="dataTable" class="dataTable">
+    
+    <select id="seleccion">
+      <option value="1">Usuario</option>
+      <option value="2">Roles</option>
+      <option value="3">Credenciales</option>
+      <option value="4">Facturas</option>
+      <option value="5">Metodo pago</option>
+      <option value="6">Detalle factura</option>
+      <option value="7">Productos</option>
+    </select>
 
-  <div class="dataTable">
-
-    <input id="nombreInput" type="text" placeholder="Nombre">
-    <input id="precioInput" type="text" placeholder="Precio">
-    <input id="urlInput" type="text" placeholder="Url">
-    <input id="disponibilidadInput" type="text" placeholder="Disponibilidad">
-    <input id="categoriaInput" type="text" placeholder="Categoria">
-    <input id="subcategoriaInput" type="text" placeholder="Sub-Categoria">
-    <br><button onclick="agregarFila()">Agregar</button>
+    <div id="inputs"></div>
 
     <table id="tableBody" border>
-      <thead>
-        <tr>
-          <th>NOMBRE</th>
-          <th>PRECIO</th>
-          <th>URL DE IMAGEN</th>
-          <th>DISPONIBILIDAD</th>
-          <th>CATEGORIA</th>
-          <th>SUB-CATEGORIA</th>
-          <th>Editar</th>
-          <th>Eliminar</th>
-        </tr>
+      <thead id="encabezadoTabla">
+        <!-- Aquí se agregarán las celdas del encabezado dinámicamente -->
       </thead>
-      <tbody>
-        <!-- Aquí puedes agregar filas de datos -->
-        <tr>
-          <td>Producto 1</td>
-          <td>19.99</td>
-          <td><a href="imagen1.jpg">Enlace</a></td>
-          <td>Disponible</td>
-          <td>Ropa</td>
-          <td>Camisetas</td>
-          <td><button onclick="editarFila(this)">Editar</button></td>
-          <td><button onclick="eliminarFila(this)">Eliminar</button></td>
-        </tr>
-        <tr>
-          <td>Producto 2</td>
-          <td>29.99</td>
-          <td><a href="imagen2.jpg">Enlace</a></td>
-          <td>No disponible</td>
-          <td>Zapatos</td>
-          <td>Deportivos</td>
-          <td><button onclick="editarFila(this)">Editar</button></td>
-          <td><button onclick="eliminarFila(this)">Eliminar</button></td>
-        </tr>
-        <!-- Agrega más filas según sea necesario -->
+      <tbody id="cuerpoTabla">
+        <!-- Aquí se agregarán las filas de datos dinámicamente -->
       </tbody>
     </table>
-
+    
   </div>
-
+  
 </body>
 
-<script src="../../Js/PanelAdmin/admin.js"> </script>
+<script src="../../Js/PanelAdmin/admin.mjs" type="module" async defer></script>
 
 </html>

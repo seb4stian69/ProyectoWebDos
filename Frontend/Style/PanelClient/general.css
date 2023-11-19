@@ -1,3 +1,6 @@
+.swal2-container{
+    font-family: 'inter';
+}
 .menu {
     display: flex;
     justify-content: space-between;

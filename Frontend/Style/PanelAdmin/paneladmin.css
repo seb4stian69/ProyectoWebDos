@@ -1,3 +1,7 @@
+*{
+    font-family: 'Inter';
+}
+
 input{
     font-family: 'Inter';
 }
@@ -113,3 +117,31 @@ a{
 .dataTable table{
     margin-top: 5%;
 }
+
+#seleccion{
+    /* Rectangle 58 */
+
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 1623px;
+    top: 62px;
+
+    background: #5BBEAC;
+    border-radius: 19px;
+
+    border: none;
+
+    text-align: center;
+    color: white;
+
+}
+
+#seleccion option {
+    background: white;
+    color: #5BBEAC;
+}
+
+.inputData:focus {
+    outline: none;
+  }
