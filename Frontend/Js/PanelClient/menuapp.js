@@ -1,6 +1,35 @@
 // Variable para llevar un registro de la estación actual
 let estacionActual = "invierno"; // Puedes establecer la estación inicial
 
+(function() {
+    
+    const apiUrl = "http://localhost/php-html/ProyectoFinal/Backend/Api/ObtenerQtyProductoCarrito.php";
+
+    const requestData = {
+        id: sessionStorage.getItem("UserID")
+    };
+
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData)
+    };
+
+    fetch(apiUrl, requestOptions)
+    .then(response => response.json())
+    .then(data => {
+        
+        document.getElementById("numberCartProduct").innerHTML = data[0].total_registros
+
+    })
+    .catch(error => {
+        console.error('Error en la solicitud:', error);
+    });
+
+})();
+
 const flechaIzq = () => {
     // Cambia a la estación anterior
     if (estacionActual === "invierno") {
